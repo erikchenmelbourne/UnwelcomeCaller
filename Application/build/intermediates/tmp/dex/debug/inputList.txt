@@ -1,0 +1,8 @@
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\classes\debug
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-dfb1f58c947b2e0aeaa965ea036aae91fbba9cab.jar
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-0f0759db737ef8d147a54e18ece71aa44ac4d22c.jar
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\classes-0194f212fc5e011bf01b0ef356277c95a32ba996.jar
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\classes-d11bfc9685d2e9ee34e4926a46ad4dd80544eff3.jar
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-d6c8942ae8ed96696fcf4b24a89b44bcdb402f21.jar
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-b5c259e7064423ac8823bee4c19d9b4f204ad325.jar
+C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\build\intermediates\pre-dexed\debug\classes-64e1d0d131ac3568fc524f942bcc6d710897d14b.jar
