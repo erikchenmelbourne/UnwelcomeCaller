@@ -136,10 +136,11 @@ public class DoneBarActivity extends Activity {
                         e.printStackTrace();
                     }
                 else {
-                    Toast.makeText(getApplicationContext(), "Status Code: " + statusCode + "Data has been posted.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Status Code: " + statusCode + " Data has been posted.", Toast.LENGTH_LONG).show();
+                    finish();
                 }
 
-                try {
+                /*try {
                     JSONObject obj = new JSONObject(string);
                     if (obj.getBoolean("status")) {
                         setDefaultValues();
@@ -150,7 +151,7 @@ public class DoneBarActivity extends Activity {
                 } catch (JSONException e) {
                     Toast.makeText(getApplicationContext(), "Error Occurred. [Server's JSON response is invalid]!", Toast.LENGTH_LONG).show();
                     e.printStackTrace();
-                }
+                }*/
             }
 
             @Override
