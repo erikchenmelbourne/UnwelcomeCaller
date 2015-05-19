@@ -14,29 +14,23 @@
   limitations under the License.
   -->
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        style="@style/Widget.SampleContentContainer"
+    <TextView
+        style="@style/Widget.SampleMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="@string/donebuttonactivity_description" />
 
-        <TextView
-            style="@style/Widget.SampleMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/donebuttonactivity_description" />
+    <fragment
+        android:id="@+id/fragment_item"
+        android:name="com.example.android.donebar.ItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_item" />
 
-        <fragment android:name="com.example.android.donebar.ItemFragment"
-            android:id="@+id/fragment_item"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout="@layout/fragment_item" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

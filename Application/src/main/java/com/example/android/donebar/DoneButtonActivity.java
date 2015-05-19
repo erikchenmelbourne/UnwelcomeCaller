@@ -26,6 +26,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.JsonHttpResponseHandler;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+
+import com.example.android.donebar.Caller;
 
 /**
  * A sample activity demonstrating the "done button" alternative action bar presentation. For a more
@@ -59,6 +72,41 @@ public class DoneButtonActivity extends Activity implements ItemFragment.OnFragm
         actionBar.setCustomView(customActionBarView);
         // END_INCLUDE (inflate_set_custom_view)
 
+        AsyncHttpClient client = new AsyncHttpClient();
+
+        client.get("http://192.168.0.100:8080/AndroidRESTful2/webresources/com.erikchenmelbourne.entities.caller", new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode,
+                                  org.apache.http.Header[] headers,
+                                  org.json.JSONArray response) {
+                if (response != null) {
+                    String string = response.toString();
+                    try {
+                        JSONArray jsonarray = new JSONArray(string);
+                        populateArrayList(jsonarray, Caller.jsonarraylist);
+                        /*for (int i = 0; i < Caller.jsonarraylist.size(); i++) {
+                            Toast.makeText(getApplicationContext(), Caller.jsonarraylist.get(i).toString(), Toast.LENGTH_LONG).show();
+                        }*/
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Status Code: " + statusCode + " Data has been posted.", Toast.LENGTH_LONG).show();
+                }
+            }
+
+            @Override
+            public void onFailure(int statusCode, org.apache.http.Header[] headers, java.lang.Throwable throwable, org.json.JSONArray errorResponse) {
+                if (statusCode == 404) {
+                    Toast.makeText(getApplicationContext(), "Requested resource not found.", Toast.LENGTH_LONG).show();
+                } else if (statusCode == 500) {
+                    Toast.makeText(getApplicationContext(), "Something went wrong at server end.", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Unexpected Error occurred. [Most common Error: Device might not be connected to Internet or remote server is not up and running]", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
         setContentView(R.layout.activity_done_button);
     }
 
@@ -83,7 +131,17 @@ public class DoneButtonActivity extends Activity implements ItemFragment.OnFragm
     }
     // END_INCLUDE (handle_cancel)
 
-    public void onFragmentInteraction(String id){
+    public void onFragmentInteraction(String id) {
 
+    }
+
+    public void populateArrayList(JSONArray array, ArrayList<JSONObject> arraylist) {
+        for (int i = 0; i < array.length(); i++) {
+            try {
+                arraylist.add(array.getJSONObject(i));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

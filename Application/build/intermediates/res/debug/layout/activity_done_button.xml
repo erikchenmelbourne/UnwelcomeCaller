@@ -14,16 +14,12 @@
   limitations under the License.
   -->
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <LinearLayout
-        style="@style/Widget.SampleContentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
         <TextView
             style="@style/Widget.SampleMessage"
@@ -33,11 +29,8 @@
 
         <fragment android:name="com.example.android.donebar.ItemFragment"
             android:id="@+id/fragment_item"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/fragment_item" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
 <!-- From: file:/C:/Users/Kaikisaragi/AndroidStudioProjects/DoneBar1/Application/src/main/res/layout/activity_done_button.xml -->
