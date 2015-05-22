@@ -149,8 +149,10 @@ containing a value of this type.
         public static final int actionbar_done=0x7f090004;
         public static final int caller_information=0x7f090001;
         public static final int caller_phone_number=0x7f090000;
-        public static final int cancel=0x7f090005;
+        public static final int cancel=0x7f090007;
         public static final int fragment_item=0x7f090002;
+        public static final int listiteminformation=0x7f090006;
+        public static final int listitemnumber=0x7f090005;
     }
     public static final class layout {
         public static final int actionbar_custom_view_done=0x7f030000;
@@ -159,12 +161,13 @@ containing a value of this type.
         public static final int activity_done_button=0x7f030003;
         public static final int activity_main=0x7f030004;
         public static final int activity_sample_dashboard=0x7f030005;
-        public static final int fragment_item=0x7f03000b;
+        public static final int fragment_item=0x7f03000c;
         public static final int fragment_item_grid=0x7f030006;
         public static final int fragment_item_list=0x7f030007;
         public static final int include_cancel_button=0x7f030008;
         public static final int include_done_button=0x7f030009;
-        public static final int sample_dashboard_item=0x7f03000a;
+        public static final int row_listitem=0x7f03000a;
+        public static final int sample_dashboard_item=0x7f03000b;
     }
     public static final class menu {
         public static final int cancel=0x7f080000;

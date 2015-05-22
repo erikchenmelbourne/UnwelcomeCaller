@@ -13,8 +13,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import org.json.JSONObject;
-
 /**
  * A fragment representing a list of Items.
  * <p/>
@@ -77,8 +75,9 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
         // TODO: Change Adapter to display your content
 
 
-        mAdapter = new ArrayAdapter<JSONObject>(getActivity(),
-                android.R.layout.simple_list_item_1, android.R.id.text1, Caller.jsonarraylist);
+        /*mAdapter = new ArrayAdapter<JSONObject>(getActivity(),
+                android.R.layout.simple_list_item_1, android.R.id.text1, Caller.jsonarraylist);*/
+        mAdapter = new ArrayAdapter2(getActivity(), Caller.jsonarraylist);
     }
 
     @Override

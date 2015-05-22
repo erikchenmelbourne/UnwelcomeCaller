@@ -20,17 +20,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        style="@style/Widget.SampleMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/donebuttonactivity_description" />
 
-        <TextView
-            style="@style/Widget.SampleMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/donebuttonactivity_description" />
+    <fragment
+        android:id="@+id/fragment_item"
+        android:name="com.example.android.donebar.ItemFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_item" />
 
-        <fragment android:name="com.example.android.donebar.ItemFragment"
-            android:id="@+id/fragment_item"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout="@layout/fragment_item" />
 </LinearLayout>
 <!-- From: file:/C:/Users/Kaikisaragi/AndroidStudioProjects/DoneBar1/Application/src/main/res/layout/activity_done_button.xml -->
