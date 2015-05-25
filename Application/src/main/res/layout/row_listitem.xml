@@ -6,27 +6,35 @@
 
 
 
-    <TableRow>
+    <TableRow
+        android:layout_margin="20dp" >
 
         <TextView
+            style="@style/Widget.SampleMessage.TealColor"
             android:padding="3dp"
-            android:text="Caller number: " />
+            android:text="Caller number: "
+            android:gravity="right"/>
 
         <TextView
+            style="@style/Widget.SampleMessage.BlackColor"
             android:id="@+id/listitemnumber"
-            android:gravity="right"
+            android:gravity="left"
             android:padding="3dp" />
 
     </TableRow>
-    <TableRow>
+    <TableRow
+        android:layout_margin="20dp" >
 
         <TextView
+            style="@style/Widget.SampleMessage.TealColor"
             android:padding="3dp"
-            android:text="Caller information: " />
+            android:text="Caller information: "
+            android:gravity="right"/>
 
         <TextView
+            style="@style/Widget.SampleMessage.BlackColor"
             android:id="@+id/listiteminformation"
-            android:gravity="right"
+            android:gravity="left"
             android:padding="3dp" />
 
     </TableRow>

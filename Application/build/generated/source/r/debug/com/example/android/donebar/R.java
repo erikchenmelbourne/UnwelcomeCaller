@@ -116,13 +116,14 @@ containing a value of this type.
         public static final int contentPaddingTop=0x7f010009;
     }
     public static final class color {
-        public static final int black_54=0x7f040000;
-        public static final int black_87=0x7f040001;
-        public static final int cardview_dark_background=0x7f040002;
-        public static final int cardview_light_background=0x7f040003;
-        public static final int cardview_shadow_end_color=0x7f040004;
-        public static final int cardview_shadow_start_color=0x7f040005;
-        public static final int teal=0x7f040006;
+        public static final int black=0x7f040000;
+        public static final int black_54=0x7f040001;
+        public static final int black_87=0x7f040002;
+        public static final int cardview_dark_background=0x7f040003;
+        public static final int cardview_light_background=0x7f040004;
+        public static final int cardview_shadow_end_color=0x7f040005;
+        public static final int cardview_shadow_start_color=0x7f040006;
+        public static final int teal=0x7f040007;
     }
     public static final class dimen {
         public static final int card_margin=0x7f050000;
@@ -139,10 +140,14 @@ containing a value of this type.
         public static final int vertical_page_margin=0x7f05000b;
     }
     public static final class drawable {
-        public static final int ic_action_cancel=0x7f020000;
-        public static final int ic_action_done=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int tile=0x7f020003;
+        public static final int background=0x7f020000;
+        public static final int backgroundhdpi=0x7f020001;
+        public static final int backgroundmdpi=0x7f020002;
+        public static final int backgroundxhdpi=0x7f020003;
+        public static final int ic_action_cancel=0x7f020004;
+        public static final int ic_action_done=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int tile=0x7f020007;
     }
     public static final class id {
         public static final int actionbar_cancel=0x7f090003;
@@ -197,6 +202,8 @@ containing a value of this type.
         public static final int Widget_SampleDashboard_Item_Description=0x7f07000b;
         public static final int Widget_SampleDashboard_Item_Title=0x7f07000c;
         public static final int Widget_SampleMessage=0x7f07000d;
+        public static final int Widget_SampleMessage_BlackColor=0x7f07000e;
+        public static final int Widget_SampleMessage_TealColor=0x7f07000f;
     }
     public static final class styleable {
         /** Attributes that can be used with a CardView.
