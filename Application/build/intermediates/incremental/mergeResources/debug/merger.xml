@@ -43,22 +43,21 @@
         
         ]]>
     </string><string name="app_name">Unwelcome Caller</string></file><file path="C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\src\main\res\values\refs.xml" qualifiers=""><item name="fragment_item" type="layout">@layout/fragment_item_list</item></file><file path="C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\src\main\res\values\strings.xml" qualifiers=""><string name="cancel">Cancel</string><string name="done">Done</string></file><file path="C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\src\main\res\values\template-dimens.xml" qualifiers=""><dimen name="margin_small">8dp</dimen><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="margin_tiny">4dp</dimen><dimen name="margin_large">32dp</dimen><dimen name="margin_huge">64dp</dimen><dimen name="margin_medium">16dp</dimen><dimen name="horizontal_page_margin">@dimen/margin_medium</dimen></file><file path="C:\Users\Kaikisaragi\AndroidStudioProjects\DoneBar1\Application\src\main\res\values\template-styles.xml" qualifiers=""><style name="Widget.SampleMessage">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
-        <item name="android:textColor">@color/black_87</item>
+        <item name="android:textColor">@color/black</item>
     </style><style name="Widget.SampleDashboard.Card" parent="Widget">
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">@dimen/card_margin</item>
-        <item name="cardCornerRadius">4dp</item>
         <item name="cardElevation">5dp</item>
         <item name="contentPadding">@dimen/card_padding</item>
     </style><style name="Widget.SampleDashboard.Item" parent="Widget">
     </style><style name="Widget.SampleDashboard.Item.Description" parent="Widget">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColor">@color/black</item>
     </style><style name="Widget.SampleMessage.TealColor">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
         <item name="android:textColor">@color/teal</item>
     </style><style name="Theme.Sample" parent="Theme.Base"/><style name="Widget"/><style name="Widget.SampleContentContainer">
@@ -67,7 +66,7 @@
         <item name="android:paddingLeft">@dimen/horizontal_page_margin</item>
         <item name="android:paddingRight">@dimen/horizontal_page_margin</item>
     </style><style name="Theme.Base" parent="android:Theme.Holo.Light"/><style name="Widget.SampleMessage.BlackColor">
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:lineSpacingMultiplier">1.1</item>
         <item name="android:textColor">@color/black</item>
     </style><style name="Widget.SampleDashboard.Grid" parent="Widget">
@@ -77,9 +76,13 @@
         <item name="android:drawSelectorOnTop">true</item>
         <item name="android:horizontalSpacing">0dp</item>
         <item name="android:verticalSpacing">0dp</item>
-    </style><style name="AppTheme" parent="Theme.Sample"/><style name="Widget.SampleDashboard.Item.Title" parent="Widget">
+    </style><style name="AppTheme" parent="Theme.Sample"/><style name="Widget.SampleMessage.OrangeColor">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textColor">@color/black_87</item>
+    </style><style name="Widget.SampleDashboard.Item.Title" parent="Widget">
         <item name="android:layout_marginBottom">@dimen/margin_tiny</item>
-        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:textColor">@color/teal</item>
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">24sp</item>

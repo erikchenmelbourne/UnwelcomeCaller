@@ -82,7 +82,8 @@ int style Widget_SampleDashboard_Item_Description 0x7f07000b
 int style Widget_SampleDashboard_Item_Title 0x7f07000c
 int style Widget_SampleMessage 0x7f07000d
 int style Widget_SampleMessage_BlackColor 0x7f07000e
-int style Widget_SampleMessage_TealColor 0x7f07000f
+int style Widget_SampleMessage_OrangeColor 0x7f07000f
+int style Widget_SampleMessage_TealColor 0x7f070010
 int[] styleable CardView { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a }
 int styleable CardView_cardBackgroundColor 0
 int styleable CardView_cardCornerRadius 1

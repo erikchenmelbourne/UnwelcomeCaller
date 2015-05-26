@@ -124,7 +124,7 @@ public class DoneBarActivity extends Activity {
 
 
         AsyncHttpClient client = new AsyncHttpClient();
-        client.post(null, "http://192.168.0.103:8080/AndroidRESTful2/webresources/com.erikchenmelbourne.entities.caller", se, "application/json", new AsyncHttpResponseHandler() {
+        client.post(null, "http://192.168.0.101:8080/AndroidRESTful2/webresources/com.erikchenmelbourne.entities.caller", se, "application/json", new AsyncHttpResponseHandler() {
             private String string;
 
             @Override

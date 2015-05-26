@@ -74,7 +74,7 @@ public class DoneButtonActivity extends Activity implements ItemFragment.OnFragm
 
         AsyncHttpClient client = new AsyncHttpClient();
 
-        client.get("http://192.168.0.103:8080/AndroidRESTful2/webresources/com.erikchenmelbourne.entities.caller", new JsonHttpResponseHandler() {
+        client.get("http://192.168.0.101:8080/AndroidRESTful2/webresources/com.erikchenmelbourne.entities.caller", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode,
                                   org.apache.http.Header[] headers,

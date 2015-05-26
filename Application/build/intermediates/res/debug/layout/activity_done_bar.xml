@@ -17,8 +17,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:alpha="0.9" >
+    android:background="@drawable/background" >
 
     <LinearLayout
         style="@style/Widget.SampleContentContainer"
@@ -26,7 +25,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
-        <TextView
+        <com.example.android.donebar.MyTextView
             style="@style/Widget.SampleMessage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,13 +36,13 @@
             android:layout_height="20dp"
             android:layout_weight="1" />
 
-        <TextView
-            style="@style/Widget.SampleMessage"
+        <com.example.android.donebar.MyTextView
+            style="@style/Widget.SampleMessage.OrangeColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Caller's number" />
 
-        <EditText
+        <com.example.android.donebar.MyEditText
             android:id="@+id/caller_phone_number"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
@@ -53,13 +52,13 @@
             android:layout_height="20dp"
             android:layout_weight="1" />
 
-        <TextView
-            style="@style/Widget.SampleMessage"
+        <com.example.android.donebar.MyTextView
+            style="@style/Widget.SampleMessage.OrangeColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Infomation" />
 
-        <EditText
+        <com.example.android.donebar.MyEditText
             android:id="@+id/caller_information"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

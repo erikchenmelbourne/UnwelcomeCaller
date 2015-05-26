@@ -7,15 +7,15 @@
 
 
     <TableRow
-        android:layout_margin="20dp" >
+        android:layout_margin="15dp" >
 
-        <TextView
-            style="@style/Widget.SampleMessage.TealColor"
+        <com.example.android.donebar.MyTextView
+            style="@style/Widget.SampleMessage.OrangeColor"
             android:padding="3dp"
             android:text="Caller number: "
             android:gravity="right"/>
 
-        <TextView
+        <com.example.android.donebar.MyTextView
             style="@style/Widget.SampleMessage.BlackColor"
             android:id="@+id/listitemnumber"
             android:gravity="left"
@@ -23,15 +23,15 @@
 
     </TableRow>
     <TableRow
-        android:layout_margin="20dp" >
+        android:layout_margin="15dp" >
 
-        <TextView
-            style="@style/Widget.SampleMessage.TealColor"
+        <com.example.android.donebar.MyTextView
+            style="@style/Widget.SampleMessage.OrangeColor"
             android:padding="3dp"
             android:text="Caller information: "
             android:gravity="right"/>
 
-        <TextView
+        <com.example.android.donebar.MyTextView
             style="@style/Widget.SampleMessage.BlackColor"
             android:id="@+id/listiteminformation"
             android:gravity="left"

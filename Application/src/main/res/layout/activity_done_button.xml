@@ -19,10 +19,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background"
-    android:alpha="0.9" >
+    android:background="@drawable/background" >
 
-    <TextView
+    <com.example.android.donebar.MyTextView
         style="@style/Widget.SampleMessage"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"

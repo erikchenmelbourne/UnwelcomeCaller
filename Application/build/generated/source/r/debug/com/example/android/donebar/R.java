@@ -203,7 +203,8 @@ containing a value of this type.
         public static final int Widget_SampleDashboard_Item_Title=0x7f07000c;
         public static final int Widget_SampleMessage=0x7f07000d;
         public static final int Widget_SampleMessage_BlackColor=0x7f07000e;
-        public static final int Widget_SampleMessage_TealColor=0x7f07000f;
+        public static final int Widget_SampleMessage_OrangeColor=0x7f07000f;
+        public static final int Widget_SampleMessage_TealColor=0x7f070010;
     }
     public static final class styleable {
         /** Attributes that can be used with a CardView.
